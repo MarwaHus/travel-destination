@@ -1,18 +1,24 @@
 .div3{
     margin-top: 50px;
-    
-    align-content: space-between;
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 img{
     
     flex-wrap: wrap;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 5px 10px #dcdada;
 }
 h2{
 
-    font-size: medium;
+    font-size: large;
     color:midnightblue;
     font-family:monospace;
+}
+.tour1{
+margin-left: 20px;
+margin-bottom: 40px;
 }

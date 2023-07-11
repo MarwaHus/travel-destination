@@ -1,20 +1,15 @@
 
 import Header from "../header/header";
 import Tours from "../tours/tours";
-import db from '../../data/db.json';
 import Footer from "../footer/footer";
 
 
-function Home(){
+function Home(props){
     return(
 <div>
     <Header/>
-   {
-db.map((obj,i)=>(
-    <Tours name={obj.name} image={obj.image}/>
-))
-    }
-     <Footer/>
+    <Tours db={props.db}/>
+    <Footer/>
 </div>
     );
 
