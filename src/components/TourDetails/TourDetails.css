@@ -1,0 +1,23 @@
+nav{
+    list-style: none;
+    font-size: medium;
+   color: blue;
+   text-align: right;
+}
+p{
+    border: solid;
+    background-color:antiquewhite;
+}
+#bnt{
+    border: 0;
+    background: #99DBF5;
+    padding: .5rem;
+    color: white;
+    width: auto ;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: #4F709C;
+    }
+    border: 2px solid white ;
+}
