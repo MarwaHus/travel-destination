@@ -2,7 +2,7 @@ import "./tours.css"
 
 function Tours(props){
     return(
-<div class="div3">
+<div className="div3">
     {props.db.map((obj,i)=>(
         <div key={i} className="tour1">
            <h2>{obj.name}</h2>
