@@ -2,16 +2,18 @@
 import Header from "../header/header";
 import Tours from "../tours/tours";
 import Footer from "../footer/footer";
+import db from "../../data/db.json"
 
-
-function Home(props){
-    return(
-<div>
-    <Header/>
-    <Tours db={props.db}/>
-    <Footer/>
-</div>
+const Home = () => {
+    console.log(db);
+    return (
+      <>
+        <Header  />
+        {db.map((tour) => <Tours key={tour.id} id={tour.id} name={tour.name} image={tour.image} />
+        )}
+        <Footer/>
+      </>
     );
-
 }
+
 export default Home;

@@ -1,14 +1,14 @@
 import "./tours.css"
+import Tour from "./tour/Tour";
 
 function Tours(props){
     return(
-<div class="div3">
-    {props.db.map((obj,i)=>(
-        <div key={i} className="tour1">
-           <h2>{obj.name}</h2>
-           <img src={obj.image} alt={obj.id}/> 
+<div className="div3">
+  
+        <div className="tour1">
+          <Tour name={props.name} image={props.image} id ={props.id}/>
            </div>
-    ))}
+
 </div>
     );
 
